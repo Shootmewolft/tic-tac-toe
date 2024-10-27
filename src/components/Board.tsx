@@ -5,7 +5,7 @@ interface Props {
   updateBoard: (index: number) => void;
 }
 
-function Board({ board, updateBoard }: Props) {
+export function Board({ board, updateBoard }: Props) {
   return (
     <section className="grid grid-cols-3 gap-4">
       {board.map((cell, index) => (

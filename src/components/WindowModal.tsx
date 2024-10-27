@@ -6,7 +6,7 @@ interface Props {
   restartGame: () => void;
 }
 
-function WindowModal({ winner, restartGame }: Props) {
+export function WindowModal({ winner, restartGame }: Props) {
   const textWinner = !winner ? "Empate" : "Ganó:";
   return (
     <section className="absolute bg-black/80 w-dvw flex flex-col gap-4 items-center h-dvh justify-center rounded">

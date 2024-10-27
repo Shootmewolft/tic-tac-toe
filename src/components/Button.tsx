@@ -3,7 +3,7 @@ interface Props {
   text: string;
 }
 
-function Button({ restartGame, text }: Props) {
+export function Button({ restartGame, text }: Props) {
   const handleClick = () => {
     restartGame();
   };

@@ -2,10 +2,7 @@ import { useState } from "react";
 import confetti from "canvas-confetti";
 import { initialBoard, TURNS } from "@/utils/consts";
 import { checkEndGame, checkWinner } from "./logic/check";
-import WindowModal from "@/components/WindowModal";
-import IndicatorTurn from "@/components/IndicatorTurn";
-import Board from "@/components/Board";
-import Button from "./components/Button";
+import { WindowModal, IndicatorTurn, Board, Button } from '@/components';
 
 function App() {
   const [board, setBoard] = useState<(null | string)[]>(() => {

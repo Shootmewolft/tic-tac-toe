@@ -7,7 +7,7 @@ interface Props {
   index?: number;
 }
 
-function Cell({ children, updateBoard, isSelected, index }: Props) {
+export function Cell({ children, updateBoard, isSelected, index }: Props) {
   const handleClick = () => {
     if (updateBoard && index !== undefined) {
       updateBoard(index);
